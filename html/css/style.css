@@ -1,4 +1,27 @@
 h1{
-    background-color: bisque;
-    color: rgb(192, 216, 38);
+    background-color: rgb(26, 205, 166);
+    color: #1f1e1d;;
+}
+p{
+    padding-left: 50px;
+    color: rgb(182, 9, 84);
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/gradient-pastel-sky-background_23-2148917404.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+}
+h1{
+    color: rgb(14, 52, 85);
+    text-align: center;
+    margin-top: 50px;
+}
+.odd{
+    color: #209f07;
+}
+.even{
+    color: rgb(169, 68, 13);
+}
+#third{
+    color: rgb(8, 17, 202);
 }
