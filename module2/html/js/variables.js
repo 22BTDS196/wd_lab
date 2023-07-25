@@ -1,5 +1,7 @@
 {
-    var a = 5;
-    let b = 10;
+	"folders": [
+		{
+			"path": ".."
+		}
+	]
 }
-console.log(a);
