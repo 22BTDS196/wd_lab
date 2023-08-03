@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-white border-bottom border-primary">
+            <div class="container-fluid fs-4">
+              <a class="navbar-brand fs-2" href="#" style="color: #B2A4FF;">Pets <span class="logo">Paradise</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-primary " aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#services">Action</a></li>
+                      <li><a class="dropdown-item" href="#services">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#services">Something else here</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Our Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+<section id="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.rd.com/wp-content/uploads/2018/02/30_Adorable-Puppy-Pictures-that-Will-Make-You-Melt_124167640_YamabikaY.jpg?fit=700,467" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.vets4pets.com/siteassets/species/cat/kitten/tiny-kitten-in-sunlight.jpg?w=585&scale=down" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.humanesociety.org/sites/default/files/2019/03/rabbit-475261_0.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<br>
+<br>
+   
+    <section id="about">
+
+        <div>
+            <h1>
+                About <span style="color: #B2A4FF; font-family: cursive;" > Pets </span><span class="logo">Paradise</span>
+            </h1>
+        </div>
+
+        <hr / class="w-25 m-auto " >
+
+        <div class="row p-4">
+
+            <div class="col col-12 col-md-6 col-lg-6 col-sm-12">
+                <img src="https://5.imimg.com/data5/KH/YY/XC/SELLER-81391014/tiny-house-500x500.jpg" id="aboutus">
+            </div>
+
+            <div class="col col-12 col-md-6 col-lg-6 col-sm-12">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      
+    </section>
+
+   
+    <section id="services">
+      <div class="row p-2">
+          <h1 class="text-center"> Services @ <span style="color: #B2A4FF; font-family: cursive;" >Pets </span><span class="logo">Paradise</span></h1>
+      </div>
+      <hr / class = "w-25 m-auto">
+     <div class="row">
+      <div class="col-sm-4 mb-4 mb-sm-0">
+          <div class="card p-2">
+            <div class="card-body p-2">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>          
+     </div>
+     <div class="col-sm-4 mb-4 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>          
+ </div>
+ <div class="col-sm-4 mb-4 mb-sm-0">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>          
+</div>
+     </div>
+     <div class="row">
+      <div class="col-sm-4 mb-4 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>          
+     </div>
+     <div class="col-sm-4 mb-4 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>          
+ </div>
+ <div class="col-sm-4 mb-4 mb-sm-0">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>          
+</div>
+     </div>
+  </section>
+<br><br><br>
+
+<section id="team">
+  <div class="row">
+      <h1 class="text-center"> Meet OurTeam @ <span style="color: #B2A4FF; font-family: cursive;" >Pets </span><span class="logo">Paradise</span></h1>
+  </div>
+  <hr / class = "w-25 m-auto"><br><br>
+
+  <div class="row">
+      <div class="col-sm-4 mb-4 mb-sm-0" >
+          <div class="card" style="width: 20rem;height: 35rem;">
+              <img src="https://i.pinimg.com/564x/5b/b3/1b/5bb31b8587ee486e445da97e92edaca1.jpg" class="card-img-top rounded-circle p-3 " alt="...">
+              <div class="card-body">
+                <p class="card-text">Lea</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-4  mb-4 mb-sm-0">
+          <div class="card" style="width: 20rem;height: 35rem;">
+              <img src="https://i.pinimg.com/564x/dd/99/92/dd9992b1a934b3b0b7648bd26c077c5d.jpg" class="card-img-top rounded-circle p-3 " style="height: 80vh;" alt="...">
+              <div class="card-body">
+                <p class="card-text">Grizzly</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-4 mb-4 mb-sm-0">
+          <div class="card"style="width: 20rem; height:35rem;">
+              <img src="https://i.pinimg.com/564x/47/cd/a7/47cda78419787ae826259898c1a4c6b2.jpg" class="card-img-top rounded-circle p-3" alt="...">
+              <div class="card-body">
+                <p class="card-text">Jinny</p>
+              </div>
+            </div>
+      </div>
+  </div>
+</section>
+
+<br><br>
+    <section id="contactus">
+      <div class="row">
+          <h1 class="text-center"> Contact @ <span style="color: #B2A4FF; font-family: cursive;" > Pets </span><span class="logo">Paradise</span></strong></h1>
+      </div>
+      <hr / class = "w-25 m-auto">
+
+      <div class="row">
+          <div class="col col-lg-6 col-md-6"><br>
+              <img class="img" src="data:image/jpeg;base64,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"/>
+          </div>
+          <div class="col col-lg-6 col-md-6"><br>
+              <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </form>
+          </div>
+      </div>
+  </section>
+
+<br><br> 
+    <footer>
+      <div class="bg-primary text-center text-white fs-5">
+          Developed by Gouthami C.
+      </div>
+    </footer>
+
+
+  </body>
+</html>
