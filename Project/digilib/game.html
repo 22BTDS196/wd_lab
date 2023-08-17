@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #guessInput {
+    padding: 5px;
+    font-size: 16px;
+    width: 60px;
+    text-align: center;
+  }
+
+  #submitGuess {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+ 
+          body {
+              font-family: Arial, sans-serif;
+              background-color: #f0f0f0;
+              text-align: center;
+          }
+          .container {
+              max-width: 600px;
+              margin: 0 auto;
+              padding: 20px;
+              background-color: white;
+              border-radius: 10px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          #output {
+              font-size: 18px;
+              margin-top: 20px;
+              text-align: left;
+          }
+      
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #spellInput {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    #spellResult {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+ 
+     
+ 
+      <div class="container">
+          <h1>Fantasy Adventure Game</h1>
+          <p>Welcome to the mystical land of Eldoria.</p>
+          <div id="output">You find yourself at a crossroad. Will you go left or right?</div>
+          <button id="leftButton">Go Left</button>
+          <button id="rightButton">Go Right</button>
+      </div>
+  
+      <script>
+          const outputElement = document.getElementById('output');
+          const leftButton = document.getElementById('leftButton');
+          const rightButton = document.getElementById('rightButton');
+          
+          let storyStep = 0;
+          
+          function displayStory(message) {
+              outputElement.textContent = message;
+          }
+          
+          function advanceStory(leftChoice, rightChoice) {
+              storyStep++;
+              const message = story[storyStep];
+              displayStory(message);
+              if (storyStep === 1) {
+                  leftButton.textContent = leftChoice;
+                  rightButton.textContent = rightChoice;
+                  leftButton.addEventListener('click', () => goLeft());
+                  rightButton.addEventListener('click', () => goRight());
+              } else {
+                  leftButton.style.display = 'none';
+                  rightButton.style.display = 'none';
+              }
+          }
+          
+          function goLeft() {
+              advanceStory("Continue Left", "Turn Back");
+          }
+          
+          function goRight() {
+              advanceStory("Turn Back", "Enter the Cave");
+          }
+          
+          const story = [
+              "You find yourself at a crossroad. Will you go left or right?",
+              "You arrive at a river. Will you cross it or turn back?",
+              "You have reached the end of your journey. The treasure awaits!"
+          ];
+          
+          displayStory(story[0]);
+      </script>
+  
+  <h1>Guess the Number Game</h1>
+  <p>Guess a number between 1 and 100:</p>
+  <input type="number" id="guessInput" min="1" max="100">
+  <button id="submitGuess">Submit Guess</button>
+  <p id="result"></p>
+
+<script>
+  const targetNumber = Math.floor(Math.random() * 100) + 1;
+  let attempts = 0;
+
+  document.getElementById('submitGuess').addEventListener('click', function() {
+    const guess = parseInt(document.getElementById('guessInput').value);
+    attempts++;
+
+    if (guess === targetNumber) {
+      document.getElementById('result').style.color = 'green';
+      document.getElementById('result').textContent = `Congratulations! You guessed the number ${targetNumber} in ${attempts} attempts.`;
+    } else if (guess < targetNumber) {
+      document.getElementById('result').style.color = 'red';
+      document.getElementById('result').textContent = 'Try a higher number.';
+    } else {
+      document.getElementById('result').style.color = 'red';
+      document.getElementById('result').textContent = 'Try a lower number.';
+    }
+  });
+  
+ </script>
+
+    <div class="container">
+        <h1>Spell Casting Game</h1>
+        <p>Type the correct spell incantation to cast a spell!</p>
+        <input type="text" id="spellInput" placeholder="Type a spell...">
+        <p id="spellResult"></p>
+    </div>
+
+    <script>
+        const spells = {
+            "Lumos": "A spell to create light at the wand's tip.",
+            "Alohomora": "Unlocks doors and objects.",
+            "Expecto Patronum": "Summons a Patronus to ward off Dementors.",
+            // Add more spells here
+        };
+
+        const spellInput = document.getElementById('spellInput');
+        const spellResult = document.getElementById('spellResult');
+
+        spellInput.addEventListener('input', () => {
+            const inputText = spellInput.value.trim();
+            if (inputText === '') {
+                spellResult.textContent = '';
+            } else if (spells[inputText]) {
+                spellResult.textContent = spells[inputText];
+            } else {
+                spellResult.textContent = 'Unknown spell.';
+            }
+        });
+    </script>
+
+
+</body>
+</html>
